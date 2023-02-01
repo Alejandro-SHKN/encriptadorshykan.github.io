@@ -1,0 +1,327 @@
+header{
+    background-color: rgb(244, 244, 244);
+    border: solid;
+    border-radius: 0px 0px 20px 20px; 
+}
+#logo{
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+#divtextarea{
+    margin: 7% 75% 0 5%;
+    width: 50%;
+    height: 110px;
+    /* background-color: rgb(231, 231, 231); */
+    position: relative;
+}
+
+#textoEncriptado{
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    resize: none;
+    position: absolute;
+    border: solid;
+    border-width: 0px;
+    border-radius: 22px;
+}
+
+#textoEncriptado::placeholder{
+    color: rgb(45, 79, 172);
+    font-family: sans-serif;
+}
+
+#divresultadoencriptado{
+    width: 30%;
+    height: 83%;
+    margin-top: 1%;
+    /* background-color: rgb(234, 234, 234); */
+    position: absolute;
+    margin-left: 63%;
+    margin-bottom: 65%;
+}
+#textoDesencriptado::placeholder {
+     color: rgb(100, 100, 100); 
+     font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    
+
+}
+
+
+#textoDesencriptado{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: solid;
+    border: none;
+    outline: none;
+    font-weight: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-width: 0px;
+    border-radius: 18px;
+    position: relative;
+}
+
+#muneco{
+    width: 80%;
+    margin-top: 70%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 1;
+}
+
+#muneco:hover{
+    transition: all 0.7s ease-in-out 0s;
+    opacity: 0%;
+}
+#muneco:not(:hover){
+    opacity: 100%;
+    transition: all 7s ease-in-out 0s;
+}
+
+#botonEncriptado{
+    border: none;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 20px 65px;
+    background-color: rgb(45, 79, 172); 
+}
+
+#botonEncriptado:hover{
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: rgb(36, 55, 113);
+}
+#botonEncriptado:not(:hover){
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#botonEncriptado:active{
+    background-color: rgb(26, 41, 85);
+    scale: 0.9;
+
+}
+
+#botonDesencriptado{
+    border: none;
+    color: rgb(45, 79, 172); 
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%;
+    margin-top: 29%;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 20px 60px;
+    background-color: aliceblue;
+}
+
+#botonDesencriptado:hover{
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out 0s;
+    background-color:rgb(218, 224, 230);
+}
+
+#botonDesencriptado:not(:hover){
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#botonCopiar{
+    display: block;
+    border: none;
+    margin-top: 1%;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-left: 19%;
+    border-radius: 10px;
+    padding: 20px 65px;
+    background-color: rgb(31, 116, 124); 
+}
+
+#botonCopiar:hover{
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out 0s;
+    background-color:rgb(22, 86, 93);
+}
+#botonCopiar:not(:hover){
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+@media screen and (min-width:370px) and (max-width: 439px){
+    #divresultadoencriptado{
+        margin-left: 1%;
+        height: 100%;
+    }
+    #textoDesencriptado{
+        width: 300%;  
+        margin-left: 14%;
+        height: 67%;  
+        margin-top: 245%;   
+    }
+
+    #textoDesencriptado::placeholder{
+        font-size: 20px;
+    }
+
+    #muneco{
+        margin-top: 420%;
+        margin-left:100%; 
+        width: 150%;
+    }
+
+    #divtextarea{
+        width:89%;
+        text-align: start;
+    }
+
+    #botonEncriptado{
+        margin-top: 2%;
+        margin-left: 3%;
+        padding: 6% 15%;
+        position: absolute;
+        z-index: 5;
+    }
+    
+    #botonDesencriptado{
+        margin-top: 2%;
+        margin-left: 52%;
+        padding: 6% 11%;
+        position: absolute;
+        z-index: 6;
+
+    }
+    #botonCopiar{
+        margin-top: 20%; 
+        margin-left:30%;
+        padding: 6% 11%;
+        position: absolute;
+        z-index: 6;
+    }
+
+}    
+    @media screen and (min-width:439px) and (max-width: 543px){
+    
+        #divresultadoencriptado{
+            margin-left: 1%;
+            height: 100%;
+        }
+        #textoDesencriptado{
+            width: 300%;  
+            margin-left: 14%;
+            height: 67%;  
+            margin-top: 245%;   
+        }
+    
+        #textoDesencriptado::placeholder{
+            font-size: 20px;
+        }
+    
+        #muneco{
+            margin-top: 420%;
+            margin-left:100%; 
+            width: 150%;
+        }
+    
+        #divtextarea{
+            width:89%;
+            text-align: start;
+        }
+    
+        #botonEncriptado{
+            margin-top: 2%;
+            margin-left: 3%;
+            padding: 6% 15%;
+            position: absolute;
+            z-index: 5;
+        }
+        
+        #botonDesencriptado{
+            margin-top: 2%;
+            margin-left: 52%;
+            padding: 6% 11%;
+            position: absolute;
+            z-index: 6;
+    
+        }
+        #botonCopiar{
+            margin-top: 20%; 
+            margin-left:30%;
+            padding: 6% 11%;
+            position: absolute;
+            z-index: 6;
+        }
+       
+}
+    @media screen and (min-width:443px) and (max-width: 700px){
+    
+        #divresultadoencriptado{
+            margin-left: 1%;
+            height: 100%;
+        }
+        #textoDesencriptado{
+            width: 300%;  
+            margin-left: 14%;
+            height: 67%;  
+            margin-top: 245%;   
+        }
+    
+        #textoDesencriptado::placeholder{
+            font-size: 20px;
+        }
+    
+        #muneco{
+            margin-top: 420%;
+            margin-left:100%; 
+            width: 150%;
+        }
+    
+        #divtextarea{
+            width:89%;
+            text-align: start;
+        }
+    
+        #botonEncriptado{
+            margin-top: 2%;
+            margin-left: 3%;
+            padding: 6% 15%;
+            position: absolute;
+            z-index: 5;
+        }
+        
+        #botonDesencriptado{
+            margin-top: 2%;
+            margin-left: 52%;
+            padding: 6% 11%;
+            position: absolute;
+            z-index: 6;
+    
+        }
+        #botonCopiar{
+            margin-top: 20%; 
+            margin-left:30%;
+            padding: 6% 11%;
+            position: absolute;
+            z-index: 6;
+        }
+       
+}
+
+
